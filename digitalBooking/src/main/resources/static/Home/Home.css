@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+:root { 
+    --tipografia: "Poppins", sans-serif; 
+    --principalNaranja:#F0572D; 
+    --principalGrisClaro:#383B58; 
+    --grisFondo:#C4C4C4; 
+    --padding: 10px 62px 5px 62px ;
+}
+* { 
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+ }
+main {
+    display: flex; 
+    flex-direction: column; 
+    padding: 3vw 0px; 
+}
+
+.elemento-formulario {
+    display: flex;
+    flex-direction: column;
+   /* width: 95%;*/
+    align-items: center;
+}
+
+.checkFechas {
+    font-size:small;
+    align-self: start;
+    margin: 5px 20px;
+}
+
+#checkFechas {
+    margin-right: 5px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px; 
+   height: 8px; 
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--principalGrisClaro); 
+   border-radius: 4px; 
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--principalGrisClaro) ; 
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px 1px; 
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--principalGrisClaro) ; 
+}
+body::-webkit-scrollbar-track { 
+   border-radius: 4px; 
+}
+
+/* ============ESTILOS SECCION CATEGORIAS===================== */
+.seccion {
+    padding: 10px 45px 10px 55px;
+}
+.bgGris{
+    background-color: var(--grisFondo); 
+}
+.seccionCategorias { 
+    overflow-x: scroll; 
+    display: flex; 
+    justify-content: center;
+     height: fit-content;
+     padding: 10px 0;
+}
+.seccionCategorias::-webkit-scrollbar {
+     width: 10px; 
+    height: 8px; 
+}
+.seccionCategorias::-webkit-scrollbar-thumb {
+     background: var(--principalGrisClaro); 
+    border-radius: 4px; 
+}
+.seccionCategorias::-webkit-scrollbar-thumb:hover {
+     background: var(--principalGrisClaro) ; 
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px 1px; 
+}
+.seccionCategorias::-webkit-scrollbar-thumb:active {
+     background-color: var(--principalGrisClaro) ; 
+}
+.seccionCategorias::-webkit-scrollbar-track { 
+    border-radius: 4px; 
+}
+.cardCategoria { 
+    background-color: white; 
+    width: 220px; 
+    height: 280px; 
+    border-radius: 10px; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px 1px; 
+    margin: 0vh 1vw; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.cardCategoria:hover{ 
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px 1px;
+    transition: box-shadow 0.8s;
+    transform: scale(1.04);
+    transition: transform 0.8s;
+}
+.tituloCategoria {
+    font-weight: 400; 
+    font-family: var(--tipografia); 
+    font-size: 20px; 
+    margin: 5px 10px; 
+}
+.imagenCategoria { 
+    border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     background-color: var(--principalGrisClaro);
+     width: 220px;
+     height: 150px;
+ }
+h2 { 
+    font-size: 30px;
+    font-family: var(--tipografia);
+    font-weight: bolder;
+    color: var(--principalGrisClaro);
+    margin-left: 10px;
+ }
+.descripcionCategoria { 
+    margin: 5px 10px;
+     font-family: var(--tipografia);
+     font-size: 11px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -khtml-user-select: none;
+     -ms-user-select:none;
+     user-select:none;
+ }
+
+
+
+
+
+
+
+/* ============ESTILOS SECCION PRODUCTOS===================== */
+
+.seccionRecomendaciones { 
+    display: flex;
+     justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ .tituloRec{
+ }
+.cardProducto {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+    height: 270px;
+    border-radius: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.cajaImgProducto {
+    display: flex;
+    width: 55%;
+}
+.imgProducto {
+    background-color: var(--principalGrisClaro);
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+}
+.fa-heart {
+     padding: 10px;
+     margin-left: -60px;
+     color: var(--principalNaranja);
+     font-size: 30px;
+ }
+ .secInformacion {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+}
+ .secInformacion section div .fa-star {
+     color: var(--principalNaranja);
+     margin: 0;
+ }
+.headerCardProducto { 
+    display: flex;
+    justify-content: space-between;
+ }
+ .contPuntaje{ 
+     display: flex;
+     flex-direction: column;
+     justify-items: flex-end;
+     align-items: flex-end;
+ }
+ .contTitulo{ 
+    align-items: flex-start;
+    width: 70%;
+ }
+
+.secInformacion section div i {
+    color: var(--principalGrisClaro);
+    margin-right: 10px;
+}
+.seccionEstrellas { 
+    font-family: var(--tipografia);
+    color: gray;
+     font-size: 1vw;
+ }
+.tituloCardProducto {
+    font-family: var(--tipografia);
+    color: var(--principalGrisClaro);
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.numeroPuntaje { 
+    display: flex;
+     justify-content: center;
+     width: 40px;
+     border-radius: 10px;
+     background-color: var(--principalGrisClaro);
+     color: white;
+     font-family: var(--tipografia);
+     font-weight: bold;
+    font-size: 1.7vw;
+ }
+.textPuntaje { 
+     font-family: var(--tipografia);
+     color: var(--principalGrisClaro);
+     font-weight: bold;
+     text-align: end;
+     font-size: 1.1vw;
+    
+ }
+ .secCaracteristicas i{
+     font-size: 1.2vw;
+ }
+.infoUbicacion { 
+    font-family: var(--tipografia);
+     color: var(--principalGrisClaro);
+     font-weight: bold;
+     width: 100%;
+     font-size: 0.90vw;
+ }
+.linkAMapa { 
+    text-decoration: none;
+     font-family: var(--tipografia);
+     color: var(--principalNaranja);
+     font-weight: bold;
+ }
+ .linkAMapa:hover { 
+    text-decoration:underline;
+ }
+ .contDescripcionProducto{
+     display: flex;
+     align-items: flex-end;
+ }
+.descripcionProducto {
+     font-size: 12px;
+     font-family: var(--tipografia);
+     -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    line-height: 12px;
+    margin-bottom: 5px;
+ }
+ .spanMas{
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+     color: var(--principalNaranja);
+     cursor: pointer;
+     list-style-type: none;
+     text-decoration: none;
+     font-weight: 800;
+}
+.spanMas:hover{
+    text-decoration: underline;
+}
+.btnVerMasProducto{
+    background-color: var(--principalNaranja);
+    border-style: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.12) ;
+}
+.btnVerMasProducto:hover{
+    box-shadow: none;
+    background-color: white;
+    color: var(--principalNaranja);
+    border: 1px solid var(--principalNaranja);
+}
+
+/*========CLASES PARA PAGINACION=============*/
+#myList { 
+    list-style-type: none;
+    display: flex;
+     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  #myList li{ 
+      width: 48%;
+  }
+  #loadMore {
+      color:var(--principalNaranja);
+    border: 2px solid var(--principalNaranja);
+    border-radius: 10px;
+    padding: 5px 15px;
+      cursor:pointer;
+  }
+  .nvisible{
+      display: block;
+  }
+  .visible{
+      display: none;
+  }
+  #loadMore:hover {
+      color:var(--principalGrisClaro);
+      border: 2px solid var(--principalGrisClaro);
+  }
+  #showLess {
+      color:red;
+      cursor:pointer;
+  }
+  #showLess:hover {
+      color:black;
+  }
+
+
+/*========CLASES BOTON SUBIR=============*/
+  .Subir{
+    padding: 0.8rem;
+    padding-top: 0.6rem;
+      background-color: var(--principalGrisClaro);
+      font-size: 20px;
+      color: white;
+      border-radius: 100%;
+      position: fixed;
+      width: 3rem;
+      height: 3rem;
+      border-style: none;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.5s;
+      bottom: 60px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .Subir:hover{
+      box-shadow: none;
+      transition: box-shadow 0.5s;
+    }
+    
+
+
+
+
+
+
+/* ============MEDIA QUERY===================== */
+@media (max-width: 900px) {
+    #myList { 
+        list-style-type: none;
+        display: flex;
+         justify-content: space-around;
+         flex-direction: column;
+         align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .elemento-formulario {
+        width: 95%;
+    }
+      #myList li{ 
+          width: 100%;
+      display: flex;
+      justify-content: center;
+      }
+    h2{
+        font-size: 5vw;
+    }
+    .seccion{
+        padding: 0 5vw;
+    }
+    .seccionCategorias {
+        justify-content: start;
+    }
+    .cardCategoria {
+        background-color: white;
+        width: 30vw;
+        min-height: fit-content;
+        border-radius: 10px;
+        box-shadow: rgb(0 0 0 / 15%) 1px 1px 5px 1px;
+        margin: 0vh 1vw;
+    }
+    
+    .imagenCategoria {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: var(--principalGrisClaro);
+        width: 30vw;
+        height: 20vw;
+      font-size: 1.4vw;
+    }
+    .numeroPuntaje { 
+        font-size: 2vw;
+     }
+    .textPuntaje { 
+         font-size: 1.7vw;
+        
+     }
+.seccionRecomendaciones { 
+   display: flex;
+  flex-direction: column;
+padding: 20px 10px;
+ justify-content: space-around;
+ align-items: center;
+}
+    .cardProducto{
+        width: 85vw;
+        display: flex;
+        margin: 2vh 0;
+    }
+    .seccionEstrellas{
+        font-size: 1.5vw;
+    }
+    .tituloCardProducto{
+        font-size: 2.7vw;
+    }
+    .infoUbicacion{
+        margin-top: 15px ;
+        font-size: 1.6vw;
+    }
+    .secInformacion section div i {
+        font-size: 2vw;
+    }
+    .descripcionProducto {
+        font-size: 0.7rem;
+    }
+    .spanMas{
+        font-size: 0.7rem;
+    }
+  }
+
+
+
+
+
+/* ============MEDIA QUERY===================== */
+
+  @media (max-width: 450px) {
+      
+.seccion{
+    padding: 0 10px;
+}
+.seccionCategorias {
+     padding-left: 5px; 
+}
+.elemento-formulario {
+    width: 95%;
+}
+    #myList { 
+        list-style-type: none;
+        display: flex;
+         justify-content: space-around;
+         flex-direction: column;
+         align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+      #myList li{ 
+          width: 100%;
+      display: flex;
+      justify-content: center;
+      }
+    .seccion {
+     padding: 20px 0;
+    }
+    h2{
+        font-size: 6.5vw;
+    }
+    .cardCategoria {
+        background-color: white;
+        width: 42vw;
+        min-height: max-content;
+        height: 50vw;
+        border-radius: 10px;
+        box-shadow: rgb(0 0 0 / 15%) 1px 1px 5px 1px;
+        margin: 0vh 1vw;
+    }
+    .imagenCategoria {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: var(--principalGrisClaro);
+        width: 42vw;
+        height: 25vw;
+    }
+    .tituloCategoria{
+        font-size: 4vw;
+        margin: 2px 10px;
+    }
+    .descripcionCategoria{
+        margin: 2px 10px;
+        font-size: 2.4vw;
+    }
+    
+    
+    
+      .seccionRecomendaciones { 
+          display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+     }
+    .cardProducto{
+        width: 85vw;
+        min-height: fit-content;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        margin: 2vh 0;
+    }
+    .cajaImgProducto{
+        width: 85vw;
+    }
+    .imgProducto{
+        width: 85vw;
+    }
+    .headerCardProducto{
+        padding: 0;
+        width: 80vw;
+    }
+    .secInformacion{
+        width: 85vw;
+        height: max-content;
+    }
+    .contDescripcionProducto {
+        display: flex;
+        align-items: flex-end;
+        padding: 10px 0;
+    }
+     .seccionEstrellas{
+        font-size: 4vw;
+    }
+    .secInformacion section div .fa-star {
+        font-size:4vw ;
+    }
+    .tituloCardProducto{
+        font-size: 6vw;
+    }
+    .numeroPuntaje{
+        font-size: 6vw;
+    }
+    .textPuntaje{
+        font-size: 4vw;
+       
+    }
+    .infoUbicacion{
+        font-size: 3.5vw;
+    }
+    .secInformacion section div i {
+        font-size: 5vw;
+    }
+    .descripcionProducto{
+        font-size: 3.8vw;
+    } 
+    .spanMas{
+        font-size: 3.8vw;
+    }
+  }
+
+  .skeleton {
+    animation: loadingAnimation 1.5s infinite;
+  }
+
+  @keyframes loadingAnimation {
+    0% {
+      background: white;
+    }
+    50% {
+      background: rgb(182, 177, 177);
+    }
+    100% {
+      background: white;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/img/logo 1.ico">
+    <link rel="stylesheet" href="/Reserva/reservaProducto.css">
+    <link rel="stylesheet" href="/../css/form.css">
+    <link rel="stylesheet" href="/../css/calendar.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/header-footer/header-footer.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <title>Digital Booking</title>
+</head>
+<body>
+    <header class="header">
+    </header>
+
+    <main class="mainDetalle">
+        <form class="form_reserva" action="">
+        <section id="header_titulo_producto"></section>
+
+
+        <div class="div_contenedor_reserva">
+            
+            <div class="div_right_reserva">
+                <h2 class="titulo_reserva_right titulo_reserva">Completa tus datos</h2>
+                <div class="formulario_reserva">
+                        <section class="seccionInputs">
+                            <div class="cajaInput">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" placeholder="Nombre"  id="nombre" disabled>
+                                <span></span>
+                            </div>
+                            <div class="cajaInputDerecha">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" placeholder="Apellido" id="apellido" disabled>
+                                <span></span>
+                            </div>
+                        </section>
+                        <section class="seccionInputs">
+                            <div class="cajaInput">
+                                <label for="ciudad">Ciudad</label>
+                                <input type="text" placeholder="Ciudad" id="ciudad" required>
+                                <span></span>
+                            </div>
+                            <div class="cajaInputDerecha">
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" placeholder="example@example.com" id="correo" disabled>
+                                <span></span>
+                            </div>
+                        </section>
+
+
+                </div>
+                <h2 class="titulo_reserva_right titulo_reserva">Selecciona tus fechas</h2>
+                <div class="div_fechas_reserva" id="div_fechas">
+                    <input class="input-calendario fa" id="calendarioLine" type="text" name="daterange"
+                           onclick="calendario()"
+                           placeholder="&#xf073; Check in - Check out"
+                           style="font-family:Arial, FontAwesome;display:none"/>
+                </div>
+                <h2 class="titulo_reserva_right titulo_reserva">Tu horario de llegada</h2>
+                <div class="div_fechas_reserva" >
+                    <p> <i class="far fa-check-circle"></i>Tu habitación va a estar lista para el ckeck-in entre las 10:00 AM y las 11:00 PM</p>
+                    <label class="label-hora" for="hora">Indica tu horario estimado de llegada</label><br>
+                    <select name="hora" id="hora" required>
+                        <option value="" selected>Seleccionar hora</option>
+                        <option value="10AM">10:00 AM</option>
+                        <option value="11AM">11:00 AM</option>
+                        <option value="12PM">12:00 PM</option>
+                        <option value="01PM">01:00 PM</option>
+                        <option value="02PM">02:00 PM</option>
+                        <option value="03PM">03:00 PM</option>
+                        <option value="04PM">04:00 PM</option>
+                        <option value="05PM">05:00 PM</option>
+                        <option value="06PM">06:00 PM</option>
+                        <option value="07PM">07:00 PM</option>
+                        <option value="08PM">08:00 PM</option>
+                        <option value="09PM">09:00 PM</option>
+                        <option value="10PM">10:00 PM</option>
+                        <option value="11PM">11:00 PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="detalle_reserva">
+                <h2 class="titulo_reserva titulo_reserva_left">Detalle de la reserva</h2>
+                <div id="detalle_reserva">
+
+                </div>
+                <hr>
+                <label for="checkin" class="label_check">Check In</label>
+                <input type="text" id="checkin" placeholder="__/__/____" class="input_check" required>
+                <hr class="separador">
+                <label for="checkout" class="label_check">Check Out</label>
+                <input type="text" id="checkout" placeholder="__/__/____" class="input_check" required>
+                <hr>
+                <div class="precioCalculado"></div>
+                <div class="precioPorNoche"></div>
+                <div class="div_boton_enviar">
+                    <button class="boton_enviar" id="enviar_reserva">Confirmar reserva</button>
+                </div>
+                <span class="error_fechas"></span>
+            </div>
+
+        </div>
+
+        </form>
+        <section id="sectionPoliticas" class="sectionPoliticas">
+
+        </section>
+    </main>
+
+    <div id="modal_reserva_exitosa" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <img src="/img/done.png" width="50px" id="imagen_modal">
+            <h2 class="title-modal" id="titulo_modal">¡Muchas gracias!</h2>
+            <h2 id="mensaje_modal">Su reserva se ha realizado con éxito</h2>
+            <a href="/index.html" class="close"> OK </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+    </footer>
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="/header-footer/header-footer.js" type="module"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="reservaProducto.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

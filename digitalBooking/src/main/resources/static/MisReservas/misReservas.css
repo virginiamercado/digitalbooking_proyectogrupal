@@ -1,0 +1,526 @@
+:root{
+    --tipografia: 'Poppins', sans-serif;;
+    --principalNaranja:#F0572D;
+    --principalGrisClaro :#383B58;
+    --grisFondo:#C4C4C4;
+    --padding: 10px 62px 5px 62px ;
+}
+
+
+
+
+.reservas {
+    min-height: 70vh;
+    margin-top: 75px;
+}
+
+.subHeaderTitulo{
+    background-color: var(--principalGrisClaro);
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    margin-top: 10vh;
+}
+
+.tituloReserva{
+    color: white; 
+    font-weight:normal; 
+    margin-left: 80px; 
+    align-self: center;
+}
+
+
+.noReservas{
+    margin-top: 20px;
+}
+.noReservas h2{
+    color: var(--principalGrisClaro);
+}
+
+.noReservas a{
+    color: var(--principalNaranja);
+    font-size: 18px;
+}
+.noReservas a:hover{
+    color: var(--principalGrisClaro);
+}
+.generalReserva{
+
+}
+.headerProducto{
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -20px;
+}
+.headerProducto p{
+    font-size: 25px;
+    padding-left: 20px;
+    font-weight: bolder;
+    color: var(--principalGrisClaro);
+}
+.headerProducto span{
+    display: flex;
+    font-weight: bolder;
+}
+.headerProducto span span{
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 2px;
+}
+.sectionInfo{
+   
+    display: flex;
+    flex-direction: column;
+    color: var(--principalGrisClaro);
+    font-family: var(--tipografia);
+}
+.misResevas{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
+   background-color: var(--grisFondo);
+   min-height: 74.8vh;
+}
+.btnCancelarReserva{
+    background-color: var(--principalNaranja);
+    border-style: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+    cursor: pointer;
+}
+.btnCancelarReserva:hover{
+    box-shadow: none;
+}
+li{
+    list-style-type: none;
+    width: 47%;
+}
+.cardProducto {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+    height: 270px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.cajaImgProducto {
+    display: flex;
+    width: 55%;
+}
+.imgProducto {
+    background-color: var(--principalGrisClaro);
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+}
+.fa-heart {
+     padding: 10px;
+     margin-left: -60px;
+     color: var(--principalNaranja);
+     font-size: 30px;
+ }
+ .secInformacion {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+}
+ .secInformacion section div .fa-star {
+     color: var(--principalNaranja);
+     margin: 0;
+ }
+.headerCardProducto { 
+    display: flex;
+    justify-content: space-between;
+ }
+ .contPuntaje{ 
+     display: flex;
+     flex-direction: column;
+     justify-items: flex-end;
+     align-items: flex-end;
+ }
+ .contTitulo{ 
+    align-items: flex-start;
+    width: 70%;
+ }
+
+.secInformacion section div i {
+    color: var(--principalGrisClaro);
+    margin-right: 10px;
+}
+.seccionEstrellas { 
+    font-family: var(--tipografia);
+    color: gray;
+     font-size: 1vw;
+ }
+.tituloCardProducto {
+    font-family: var(--tipografia);
+    color: var(--principalGrisClaro);
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+.numeroPuntaje { 
+    display: flex;
+     justify-content: center;
+     width: 40px;
+     border-radius: 10px;
+     background-color: var(--principalGrisClaro);
+     color: white;
+     font-family: var(--tipografia);
+     font-weight: bold;
+    font-size: 1.7vw;
+ }
+.textPuntaje { 
+     font-family: var(--tipografia);
+     color: var(--principalGrisClaro);
+     font-weight: bold;
+     text-align: end;
+     font-size: 1.1vw;
+    
+ }
+ .secCaracteristicas i{
+     font-size: 1.5vw;
+ }
+.infoUbicacion { 
+    font-family: var(--tipografia);
+     color: var(--principalGrisClaro);
+     font-weight: bold;
+     width: 100%;
+     font-size: 0.90vw;
+ }
+.linkAMapa { 
+    text-decoration: none;
+     font-family: var(--tipografia);
+     color: var(--principalNaranja);
+     font-weight: bold;
+ }
+ .linkAMapa:hover { 
+    text-decoration:underline;
+ }
+ .contDescripcionProducto{
+     display: flex;
+     align-items: flex-end;
+ }
+.descripcionProducto {
+     font-size: 12px;
+     font-family: var(--tipografia);
+     -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    line-height: 12px;
+    margin-bottom: 5px;
+ }
+ .spanMas{
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+     color: var(--principalNaranja);
+     cursor: pointer;
+     list-style-type: none;
+     text-decoration: none;
+     font-weight: 800;
+}
+.spanMas:hover{
+    text-decoration: underline;
+}
+.btnVerMasProducto{
+    background-color: var(--principalNaranja);
+    border-style: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.12) ;
+}
+.btnVerMasProducto:hover{
+    box-shadow: none;
+    background-color: white;
+    color: var(--principalNaranja);
+    border: 1px solid var(--principalNaranja);
+}
+.secBtnCancelar{
+    display: flex;
+    flex-direction: column;
+}
+.headerProducto .precioCalculado{
+    text-align: left;
+    font-weight: normal;
+    align-items: center;
+    margin-top: 5px;
+  font-size: 13px;
+  }
+  .headerProducto .precioNumero{
+    color: var(--principalGrisClaro);
+    font-weight: bolder;
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  .headerProducto  .precioPorNoche{
+    font-size: 13px;
+    text-align: right;
+  }
+/*========CLASES PARA PAGINACION=============*/
+#myList { 
+    list-style-type: none;
+    display: flex;
+     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  #myList li{ 
+      width: 48%;
+  }
+  #loadMore {
+      color:var(--principalNaranja);
+    border: 2px solid var(--principalNaranja);
+    border-radius: 10px;
+    padding: 5px 15px;
+      cursor:pointer;
+  }
+  .nvisible{
+      display: block;
+  }
+  .visible{
+      display: none;
+  }
+  #loadMore:hover {
+      color:var(--principalGrisClaro);
+      border: 2px solid var(--principalGrisClaro);
+  }
+  #showLess {
+      color:red;
+      cursor:pointer;
+  }
+  #showLess:hover {
+      color:black;
+  }
+  
+/*========CLASES BOTON SUBIR=============*/
+.Subir{
+    padding: 0.8rem;
+    padding-top: 0.6rem;
+      background-color: var(--principalGrisClaro);
+      font-size: 20px;
+      color: white;
+      border-radius: 100%;
+      position: fixed;
+      width: 3rem;
+      height: 3rem;
+      border-style: none;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.5s;
+      bottom: 60px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .Subir:hover{
+      box-shadow: none;
+      transition: box-shadow 0.5s;
+    }
+
+
+
+
+    @media (max-width: 900px) {
+    
+        li {
+            width: fit-content;
+        }
+    #myList { 
+        list-style-type: none;
+        display: flex;
+         justify-content: space-around;
+         flex-direction: column;
+         align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+      #myList li{ 
+          width: 100%;
+      display: flex;
+      justify-content: center;
+      }
+    h2{
+        font-size: 5vw;
+    }
+   
+    .cardProducto{
+        width: 85vw;
+        display: flex;
+        margin: 2vh 0;
+    }
+    .seccionEstrellas{
+        font-size: 1.5vw;
+    }
+    .tituloCardProducto{
+        font-size: 2.7vw;
+    }
+    .infoUbicacion{
+        margin-top: 15px ;
+        font-size: 1.6vw;
+    }
+    .secInformacion section div i {
+        font-size: 2vw;
+    }
+    .descripcionProducto {
+        font-size: 0.7rem;
+    }
+    .spanMas{
+        font-size: 0.7rem;
+    }
+  }
+
+
+
+
+
+/* ============MEDIA QUERY===================== */
+  @media (max-width: 400px) {
+    #myList { 
+        list-style-type: none;
+        display: flex;
+         justify-content: space-around;
+         flex-direction: column;
+         align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+      #myList li{ 
+          width: 100%;
+      display: flex;
+      justify-content: center;
+      }
+    .seccion {
+     padding: 20px 0;
+    }
+    h2{
+        font-size: 6.5vw;
+    }
+    .cardCategoria {
+        background-color: white;
+        width: 50vw;
+        min-height: max-content;
+        height: 50vw;
+        border-radius: 10px;
+        box-shadow: rgb(0 0 0 / 15%) 1px 1px 5px 1px;
+        margin: 0vh 1vw;
+    }
+    .imagenCategoria {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: rgb(119, 231, 220);
+        width: 50vw;
+        height: 25vw;
+    }
+    .tituloCategoria{
+        font-size: 4vw;
+        margin: 2px 10px;
+    }
+    .descripcionCategoria{
+        margin: 2px 10px;
+        font-size: 2.4vw;
+    }
+    
+    
+    
+      .seccionRecomendaciones { 
+          display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+     }
+    .cardProducto{
+        width: 85vw;
+        min-height: fit-content;
+        height: 85vh;
+        min-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 2vh 0;
+    }
+    .cajaImgProducto{
+        width: 85vw;
+    }
+    .imgProducto{
+        width: 85vw;
+    }
+    .headerCardProducto{
+        padding: 0;
+        width: 80vw;
+    }
+    .secInformacion{
+        width: 85vw;
+        height: 50vh;
+    }
+     .seccionEstrellas{
+        font-size: 4vw;
+    }
+    .secInformacion section div .fa-star {
+        font-size:4vw ;
+    }
+    .tituloCardProducto{
+        font-size: 6vw;
+    }
+    .numeroPuntaje{
+        font-size: 6vw;
+    }
+    .textPuntaje{
+        font-size: 4vw;
+       
+    }
+    .infoUbicacion{
+        font-size: 3.5vw;
+    }
+    .secInformacion section div i {
+        font-size: 5vw;
+    }
+    .descripcionProducto{
+        font-size: 3.8vw;
+    } 
+    .spanMas{
+        font-size: 3.8vw;
+    }
+  }
+
+  .skeleton {
+    animation: loadingAnimation 1.5s infinite;
+  }
+
+  @keyframes loadingAnimation {
+    0% {
+      background: white;
+    }
+    50% {
+      background: rgb(182, 177, 177);
+    }
+    100% {
+      background: white;
+    }
+  }

@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+:root{
+    --tipografia: 'Poppins', sans-serif;;
+    --principalNaranja:#F0572D;
+    --principalGrisClaro :#383B58;
+    --grisFondo:#C4C4C4;
+  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: calc(100vh - 130px);
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grisFondo);
+}
+
+.container-form{
+    width: 90vw !important;
+}
+
+.tituloCreacionProducto{
+    color: var(--principalNaranja);
+    font-family:var(--tipografia);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+    margin-right: 870px !important;
+}
+
+.ConteinerFrom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+}
+.formCreacionProducto{
+    background-color: white;
+    border-radius: 6px;
+    width: 90vw;
+    padding: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.containerDatosPrincipales{
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    margin: 0px 5px;
+    font-size: 15px;
+    font-weight: 450;
+    font-family: var(--tipografia);
+}
+
+
+
+
+input{
+    border-radius: 5px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 42vw;
+    height: 30px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15);
+    font-size: 13px;
+}
+input:focus{
+    outline: none;
+    border: 0;
+}
+
+.titulo-select{
+    padding-bottom: 9px;
+}
+
+.select-categoria {
+    font-family: 'Poppins', "Font Awesome 5 Pro";
+    font-weight: 550;
+    color: #757575;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15)
+;
+}
+
+.select-ciudad{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15);
+    font-size: 13px !important;
+    width: 500px !important;
+    height: 30px;
+
+}
+
+.bloque-label-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-area-descripcion{
+    width: 85vw;
+    height: 150px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    
+}
+
+.bloque-descripcion{
+    padding-left: 10px;
+    padding-bottom: 30px;
+  }
+
+
+
+#text-area-descripcion::-webkit-input-placeholder{
+    padding-left: 15px;
+    padding-top: 8px;
+
+}
+
+.bloque-politicas{
+    display:flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15);
+    border: none;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 10px;
+}
+
+.card-politicas{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-area-politicas{
+    height: 150px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15);
+    border: none;
+    border-radius: 5px;
+    
+}
+h3{
+    padding-bottom: 10px;
+    padding-top: 25px;
+    margin-left: 11px;
+}
+.inputImagenes{
+    width: 83vw !important;
+    justify-self: center;
+    margin: 10px 10px 10px 10px
+}
+
+.bloque-imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 11px;
+}
+.bloque-imagen{
+    display: flex;
+    background-color: #dad8d8;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-crearProducto{
+    background-color: var(--principalNaranja);
+    border: none;
+    width: 30vw;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 330px !important;
+    }
+
+.btn-eliminar-imagen{
+    color: white;
+    background-color: #383B58;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-right:8px;
+    font-weight: 600;
+
+}
+
+.descripcion-politicas{
+    padding-bottom: 8px !important;
+    padding-top: 5px !important;
+    font-size: 13px;
+}
+
+.bloque-caracteristicas{
+    display:flex;
+    flex-direction: space-around;
+    flex-wrap: wrap;
+
+}
+
+.bloque-caracteristica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+
+}
+
+.checkbox-caracteristicas{
+    border: none;
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+    margin: 1px 10px 0px 0px !important;
+}
+
+
+.bloque-boton-crear{
+    display: flex;
+}
+
+.nombre-caracteristica{
+    margin:0px !important
+    }
+
+
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0, 0, 0, 0.17);
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      width: 30%;
+      text-align:center;
+      border-radius: 10px;
+      padding: 2.5em;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+    #mensaje_modal{
+      margin-bottom: 2em;
+    }
+    /* The Close Button */
+    .close{
+        font-size: 28px;
+        background-color: var(--principalNaranja);
+        padding: 10px 40px;
+        border-radius: 10px;
+        padding:0 20px;
+        text-decoration: none;
+        width: 50%;
+        margin: auto;
+        color:white;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+    .title-modal{
+        color:var(--principalNaranja);
+    }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted orange;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: --principalGrisClaro;
+  color: red;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted orange;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: --principalGrisClaro;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+#textarea_feedback {
+   font-size: px !important;
+   padding-top: 5px;
+}
+
+#textarea_feedback2
+{
+    font-size: 12px !important;
+    padding-top: 5px;
+ }
+/* =============MEDIA QUERY TABLET==================== */
+
+@media (min-width:400px) and (max-width:901px) {
+    
+    .tituloCreacionProducto{
+        margin-right: 0px !important;
+        align-self: flex-start;
+    }
+    
+    input{
+    border-radius: 5px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40vw;
+    height: 30px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15);
+    font-size: 13px;
+
+}
+
+.select-categoria {
+    font-family: 'Poppins', "Font Awesome 5 Pro";
+    font-weight: 550;
+    color: #757575;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 40vw;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15);
+}
+
+.select-ciudad{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.15);
+    font-size: 13px !important;
+    width: 40vw !important;
+    height: 30px;
+
+}
+
+.bloque-descripcion{
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-area-descripcion{
+    width: 83vw !important;
+    height: 110px;
+}
+h3{
+    margin-left: 15px;
+}
+.label-descripcion{
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+#textarea_feedback{
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+#textarea_feedback2{
+    margin-top: 5px;
+    font-size: 10px;
+}
+.bloque-politicas{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+}
+
+.text-area-politicas{
+    width: 75vw;
+    margin-bottom: 13px;
+}
+.descripcion-politicas{
+    margin-left: 0px;
+}
+
+.bloque-boton-crear{
+    display: flex;
+    justify-content: center;
+}
+.btn-crearProducto{
+    margin-left: 0 !important;
+    align-self: center;
+    }
+
+    .bloque-imagenes{
+        margin: 13px;
+    }
+    .bloque-caracteristicas{
+        display:flex;
+        flex-wrap: wrap;
+        }
+
+}
+
+
+
+/* =============MEDIA QUERY MOVIL==================== */
+
+@media (max-width:400px ) {
+
+    .tituloCreacionProducto{
+        margin-right: 0px !important;
+        align-self: flex-start;
+    }
+label{
+    font-size: 15px;
+}
+
+.containerDatosPrincipales{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 80vw;
+    }
+
+.select-categoria {
+    width: 80vw;
+    margin-bottom: 13px;
+}
+
+.select-ciudad{
+    width: 80vw !important;
+    margin-bottom: 13px;
+}
+
+.bloque-descripcion{
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-area-descripcion{
+    width: 80vw !important;
+}
+
+#textarea_feedback{
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+#textarea_feedback2{
+    margin-top: 5px;
+    font-size: 10px;
+}
+.bloque-politicas{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-descripcion{
+    align-self: flex-start;
+    margin-bottom: 3px;
+}
+
+.text-area-politicas{
+    width: 65vw;
+    margin-bottom: 13px;
+}
+
+.descripcion-politicas{
+    margin-left: 0px;
+}
+
+.bloque-boton-crear{
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-crearProducto{
+    margin-left: 0 !important;
+    align-self: center;
+    }
+
+.bloque-caracteristicas{
+    display:flex;
+    flex-wrap: wrap;
+    }
+
+
+}
+

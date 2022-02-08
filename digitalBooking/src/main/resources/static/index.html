@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/Home/Home.css">
+    <link rel="shortcut icon" href="/img/logo 1.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/header-footer/header-footer.css">
+
+
+
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+
+    </header>
+    <main>
+        <!-- =========SECCION BUSCADOR=========== -->
+        <section class="seccion seccionBuscador">
+            <h1 class="titulo">Busca ofertas en hoteles y mucho más</h1>
+            <div class="buscador">
+                <form class="formBuscar" action="">    
+                    <div class="elemento-formulario" id="divCiudad">
+                        <!--datalist era un select y el input no iba-->
+                        <input list="ciudad" class="input-fecha fa" id="buscarCiudad" placeholder="&#xf3c5; ¿A dónde vamos?" autocomplete="off">
+                        <datalist class="select-ciudad fa" name="ciudad" id="ciudad">
+                            
+                        </datalist>
+                        
+                    </div> 
+                    <div class="elemento-formulario fechas">
+                        <input class="input-calendario fa" id="calendarioLine" type="text" name="daterange" 
+                               placeholder="&#xf073; Check in - Check out"
+                               style="font-family:Arial, FontAwesome" autocomplete="off"/>
+                        <label class="checkFechas"><input type="checkbox" id="checkFechas">Aún no sé las fechas</label>
+                    </div>
+                    <div  class="elemento-formulario">
+                    <button class="botonBuscar">Buscar</button>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+        <!-- =========SECCION CATEGORIAS=========== -->
+        <section class="seccion">
+            <h2>Buscar Por Tipo de Alojamiento</h2>
+            <section class="seccionCategorias">
+                <div class="cardCategoria skeleton cargaC"></div>
+                <div class="cardCategoria skeleton cargaC"></div>
+                <div class="cardCategoria skeleton cargaC"></div>
+                <div class="cardCategoria skeleton cargaC"></div>
+            </section>
+        </section>
+
+
+    <!-- =========SECCION PRODUCTOS=========== -->
+     <section  class="seccion bgGris">
+           <h2 class="tituloRec">Recomendaciones</h2>
+            <section class="seccionRecomendaciones">
+                <ul id="myList">
+                    <li class="carga">
+                        <div class="cardProducto skeleton"></div>
+                    </li>
+                    <li class="carga">
+                         <div class="cardProducto skeleton"></div>
+                     </li>
+                     <li class="carga">
+                         <div class="cardProducto skeleton"></div>
+                     </li>
+                     <li class="carga">
+                         <div class="cardProducto skeleton"></div>
+                     </li>
+                     <li class="carga">
+                         <div class="cardProducto skeleton"></div>
+                     </li>
+                </ul>
+                <div id="loadMore">Ver Mas</div>
+            </section>
+    
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <button class="Subir" >  
+        <i class="fas fa-chevron-up"></i>
+     </button>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+<script src="/Home/Home.js" type="module"></script>
+<script src="/header-footer/header-footer.js" type="module"></script> 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

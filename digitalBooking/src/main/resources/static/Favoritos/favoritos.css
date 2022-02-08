@@ -1,0 +1,277 @@
+:root{
+    --tipografia: 'Poppins', sans-serif;;
+    --principalNaranja:#F0572D;
+    --principalGrisClaro :#383B58;
+    --grisFondo:#C4C4C4;
+    --padding: 10px 62px 5px 62px ;
+}
+
+
+
+
+.reservas {
+    min-height: 70vh;
+    margin-top: 75px;
+}
+
+.subHeaderTitulo{
+    background-color: var(--principalGrisClaro);
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    margin-top: 10vh;
+}
+
+.tituloReserva{
+    color: white; 
+    font-weight:normal; 
+    margin-left: 80px; 
+    align-self: center;
+}
+
+
+
+.noFavoritos{
+    margin-top: 20px;
+}
+.noFavoritos h2{
+    color: var(--principalGrisClaro);
+}
+
+.noFavoritos a{
+    color: var(--principalNaranja);
+    font-size: 18px;
+}
+.noFavoritos a:hover{
+    color: var(--principalGrisClaro);
+}
+.misFavoritos{
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
+   background-color: var(--grisFondo);
+   min-height: 74.8vh;
+}
+li{
+    list-style-type: none;
+    width: 47%;
+}
+.cardProducto {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+    height: 270px;
+    border-radius: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.cajaImgProducto {
+    display: flex;
+    width: 55%;
+}
+.imgProducto {
+    background-color: var(--principalGrisClaro);
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+}
+.fa-heart {
+     padding: 10px;
+     margin-left: -60px;
+     color: var(--principalNaranja);
+     font-size: 30px;
+ }
+ .secInformacion {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+}
+ .secInformacion section div .fa-star {
+     color: var(--principalNaranja);
+     margin: 0;
+ }
+.headerCardProducto { 
+    display: flex;
+    justify-content: space-between;
+ }
+ .contPuntaje{ 
+     display: flex;
+     flex-direction: column;
+     justify-items: flex-end;
+     align-items: flex-end;
+ }
+ .contTitulo{ 
+    align-items: flex-start;
+    width: 70%;
+ }
+
+.secInformacion section div i {
+    color: var(--principalGrisClaro);
+    margin-right: 10px;
+}
+.seccionEstrellas { 
+    font-family: var(--tipografia);
+    color: gray;
+     font-size: 1vw;
+ }
+.tituloCardProducto {
+    font-family: var(--tipografia);
+    color: var(--principalGrisClaro);
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+.numeroPuntaje { 
+    display: flex;
+     justify-content: center;
+     width: 40px;
+     border-radius: 10px;
+     background-color: var(--principalGrisClaro);
+     color: white;
+     font-family: var(--tipografia);
+     font-weight: bold;
+    font-size: 1.7vw;
+ }
+.textPuntaje { 
+     font-family: var(--tipografia);
+     color: var(--principalGrisClaro);
+     font-weight: bold;
+     text-align: end;
+     font-size: 1.1vw;
+    
+ }
+ .secCaracteristicas i{
+     font-size: 1.5vw;
+ }
+.infoUbicacion { 
+    font-family: var(--tipografia);
+     color: var(--principalGrisClaro);
+     font-weight: bold;
+     width: 100%;
+     font-size: 0.90vw;
+ }
+.linkAMapa { 
+    text-decoration: none;
+     font-family: var(--tipografia);
+     color: var(--principalNaranja);
+     font-weight: bold;
+ }
+ .linkAMapa:hover { 
+    text-decoration:underline;
+ }
+ .contDescripcionProducto{
+     display: flex;
+     align-items: flex-end;
+ }
+.descripcionProducto {
+     font-size: 12px;
+     font-family: var(--tipografia);
+     -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    line-height: 12px;
+    margin-bottom: 5px;
+ }
+ .spanMas{
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+     color: var(--principalNaranja);
+     cursor: pointer;
+     list-style-type: none;
+     text-decoration: none;
+     font-weight: 800;
+}
+.spanMas:hover{
+    text-decoration: underline;
+}
+.btnVerMasProducto{
+    background-color: var(--principalNaranja);
+    border-style: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.12) ;
+}
+.btnVerMasProducto:hover{
+    box-shadow: none;
+    background-color: white;
+    color: var(--principalNaranja);
+    border: 1px solid var(--principalNaranja);
+}
+
+/*========CLASES PARA PAGINACION=============*/
+#myList { 
+    list-style-type: none;
+    display: flex;
+     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  #myList li{ 
+      width: 48%;
+  }
+  #loadMore {
+      color:var(--principalNaranja);
+    border: 2px solid var(--principalNaranja);
+    border-radius: 10px;
+    padding: 5px 15px;
+      cursor:pointer;
+  }
+  .nvisible{
+      display: block;
+  }
+  .visible{
+      display: none;
+  }
+  #loadMore:hover {
+      color:var(--principalGrisClaro);
+      border: 2px solid var(--principalGrisClaro);
+  }
+  #showLess {
+      color:red;
+      cursor:pointer;
+  }
+  #showLess:hover {
+      color:black;
+  }
+  
+/*========CLASES BOTON SUBIR=============*/
+.Subir{
+    padding: 0.8rem;
+    padding-top: 0.6rem;
+      background-color: var(--principalGrisClaro);
+      font-size: 20px;
+      color: white;
+      border-radius: 100%;
+      position: fixed;
+      width: 3rem;
+      height: 3rem;
+      border-style: none;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.5s;
+      bottom: 60px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .Subir:hover{
+      box-shadow: none;
+      transition: box-shadow 0.5s;
+    }
+    

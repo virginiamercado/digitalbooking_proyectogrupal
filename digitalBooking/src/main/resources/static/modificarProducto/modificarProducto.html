@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/img/logo 1.ico">
+    <link rel="stylesheet" href="./modificarProducto.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../header-footer/header-footer.css">
+    
+    <title>Modificar producto</title>
+</head>
+<body>
+    <header class="header">
+
+    </header>
+    <main>
+        <div id="mensaje-error"></div>
+
+        <div class="ConteinerFrom">
+            <h2 class="tituloCreacionProducto">Modificar propiedad</h2>
+            <form class="formCreacionProducto" id="formCreacionProducto" action="">
+               
+            <div class="containerDatosPrincipales">
+                <div class="bloque-label-input">
+                    <label for="">Nombre de la propiedad</label>
+                    <input required type="text" id="inputNombreProducto" name="nombreProducto" placeholder="Hotel Hermirage">
+                </div>
+                <div class="bloque-label-input">
+                    <label required class="titulo-select" for="">Categoría</label>
+                    <select required class="select-categoria" name="categorias" id="categorias">
+                        <option value="1">Selecciona una categoría</option>
+                     </select>
+                </div>        
+        </div>
+       <div class="containerDatosPrincipales">
+            <div class="bloque-label-input">
+                <label for="">Ubicación</label>
+                <input required type="text" id="inputUbicacion" name="inputUbicacion" placeholder="Av. Colón 1643">
+            </div>
+            <div class="bloque-label-input">
+                <label class="titulo-select" id ="ciudades" for="">Ciudad</label>
+                <select required id="select-ciudad" class="select-ciudad fa" name="ciudad">
+                    <option hidden selected class="fa">Selecciona una ciudad</option>
+                </select>
+            </div>
+        </div>
+        <div class="containerDatosPrincipales">
+            <div class="bloque-label-input">
+            <label for="">URL de Google Maps 1</label>
+            <input required type="text" id="inputUbicacionGoogleMaps" name="inputUbicacionGoogleMaps" placeholder="">
+        </div>
+        <div class="bloque-label-input">
+            <label for="">URL Google Maps 2</label>
+            <input required type="text" id="inputUbicacionGoogleMaps2" name="inputUbicacionGoogleMaps2" placeholder="">
+        </div>
+    </div>
+    <div class="containerDatosPrincipales">
+    <div class="bloque-label-input">
+        <label for="">Precio por noche</label>
+        <input required type="number" id="inputPrecio" name="inputPrecio" placeholder="">
+    </div>
+    <div class="bloque-label-input">
+        <label for="">Puntuación</label>
+        <input required type="number" id="inputPuntaje" name="inputPuntaje" placeholder="">
+    </div>
+</div>
+            <div class="bloque-label-input bloque-descripcion">
+            <label class="label-descripcion"for="">Descripción corta</label>
+            <textarea required class="text-area-descripcion"  maxlength="100" id="text-area-descripcion-corta" name="descripcion" placeholder="Escribir aquí"></textarea>
+                <div id="textarea_feedback"></div>
+            </div>
+                <div class="bloque-label-input bloque-descripcion">
+                    <label class="label-descripcion"for="" maxlength="250" >Descripción extensa</label>
+                    <textarea required class="text-area-descripcion" id="text-area-descripcion-larga" name="descripcion" placeholder="Escribir aquí"></textarea>
+                    <div id="textarea_feedback2"></div>
+
+                </div>
+
+            <h3>Agregar atributos</h3>
+            <div class="bloque-caracteristicas">
+
+
+            </div>
+            <h3>Políticas del producto</h3>
+            <div class="bloque-politicas">
+                <div class="card-politicas">
+                    <h5>Normas de la casa <i class="far fa-question-circle tooltip" title="Incluye normas que sirvan para proteger tu alojamiento y para mejorar la experiencia de los huéspedes."></i></h5>
+                    <label class="descripcion-politicas"for="">Descripción</label>
+                    <textarea required id="text-area-normas" class="text-area-politicas" name="politicas" placeholder="Escribir aquí"></textarea>
+                </div>
+                <div class="card-politicas">
+                    <h5>Salud y seguridad
+                        <i class="far fa-question-circle tooltip" title="Indica aquí las normas de seguridad, documentación que los huéspedes deberán presentar, entre otros. Incluye las medidas de seguridad, uso de máscaras y distanciamiento social en prevención del COVID."></i>
+                    </h5>
+                    <label class="descripcion-politicas" for="">Descripción</label>
+                    <textarea required  id="text-area-salud" class="text-area-politicas" name="politicas" placeholder="Escribir aquí"></textarea>
+                </div>
+                <div class="card-politicas">
+                    <h5>Políticas de cancelación
+                        <i class="far fa-question-circle tooltip" title="Indica qué debe esperar un huésped en el caso que desee cancelar o modificar su reserva."></i>
+                    </h5>
+                    <label class="descripcion-politicas" for="">Descripción</label>
+                    <textarea required id="text-area-cancelacion" class="text-area-politicas" name="politicas" placeholder="Escribir aquí"></textarea>
+                </div>
+            
+            </div>
+            <h3>Cargar imágenes</h3>
+            <div class="bloque-imagenes">
+                <div class="bloque-imagen">
+                    <input required id="img-1" type="text" class="inputImagenes" name="imagenes" placeholder="Insertar https://">
+                    <button class="btn-eliminar-imagen" type="button"  onclick=
+                    "document.getElementById(
+                     'img-1').value = ''">✖</button>
+                 </div>
+                <div class="bloque-imagen">
+                    <input required id="img-2" type="text" class="inputImagenes" name="imagenes" placeholder="Insertar https://">
+                    <button class="btn-eliminar-imagen" type="button"  onclick=
+                    "document.getElementById(
+                     'img-2').value = ''">✖</button>
+                 </div>
+                <div class="bloque-imagen">
+                    <input required id="img-3" type="text" class="inputImagenes" name="imagenes" placeholder="Insertar https://">
+                    <button class="btn-eliminar-imagen" type="button"  onclick=
+                    "document.getElementById(
+                     'img-3').value = ''">✖</button>
+                 </div>
+                <div class="bloque-imagen">
+                    <input required id="img-4" type="text" class="inputImagenes" name="imagenes" placeholder="Insertar https://">
+                    <button class="btn-eliminar-imagen" type="button"  onclick=
+                    "document.getElementById(
+                     'img-4').value = ''">✖</button>
+                 </div>
+                <div class="bloque-imagen">
+                    <input required id="img-5" type="text" class="inputImagenes" name="imagenes" placeholder="Insertar https://">
+                    <button class="btn-eliminar-imagen" type="button" id="btn-5" onclick=
+                    "document.getElementById(
+                     'img-5').value = ''">✖</button>
+                 </div>
+                
+            </div>
+            <div class="bloque-boton-crear"><button class="btn-crearProducto">Modificar</button></div>
+            
+          </form> 
+        </div> 
+    </main>
+
+    <div id="modal_reserva_exitosa" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <img src="/img/done.png" width="50px" id="imagen_modal">
+            <h2 class="title-modal" id="titulo_modal">Propiedad modificada</h2>
+            <h2 id="mensaje_modal">La propiedad ha sido modificada con éxito</h2>
+            <a href="/index.html" class="close"> OK </a>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="./modificarProducto.js" type="module"></script> 
+    <script src="/header-footer/header-footer.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+</body>
+</html>

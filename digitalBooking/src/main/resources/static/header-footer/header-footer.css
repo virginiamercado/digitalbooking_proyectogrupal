@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+:root{
+    --tipografia: 'Poppins', sans-serif;;
+    --principalNaranja:#F0572D;
+    --principalGrisClaro :#383B58;
+    --grisFondo:#C4C4C4;
+    --padding: 10px 62px 5px 62px ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.prohibido{
+    text-align: center;
+    color: var(--principalGrisClaro);
+    align-self: center;
+    justify-self: center;
+}
+.secDescripcion{
+    display: flex;
+    flex-direction: column;
+}
+.precio{
+    font-weight: bolder;
+    font-size: 15px;
+    color: var(--principalGrisClaro);
+}
+
+body::-webkit-scrollbar {
+    width: 10px; 
+   height: 8px; 
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--principalGrisClaro); 
+   border-radius: 4px; 
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--principalGrisClaro) ; 
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px 1px; 
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--principalGrisClaro) ; 
+}
+body::-webkit-scrollbar-track { 
+   border-radius: 4px; 
+}
+
+header {
+    width: 100vw;
+    height: 75px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.img-logo {
+    width: 100px;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    line-height: 75px;
+    margin-top: 15px;
+}
+
+nav {
+    float: right;
+}
+
+.btn-header {
+    background-color: transparent;
+    border: 1px solid #F0572D;
+    color: #F0572D;
+    line-height: 44px;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    height: 40px;
+    width: 170px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu ul{
+}
+.menu a i{
+    font-size: 30px;
+}
+.menu .cerrar {
+    color: #F0572D;
+}
+.menu a {
+        color: #F0572D;
+        display: inline-block;
+        padding: 10px 0 10px 6px;
+        line-height: normal;
+        font-size: 14px;
+        list-style:none;
+    }
+.menu a:hover {
+    color:white;
+    background-color: var(--principalNaranja);
+    display: inline-block;
+    padding: 10px 0 10px 6px;
+    line-height: normal;
+    font-size: 14px;
+    list-style:none;
+}
+.formBuscar{
+    display: flex;
+    justify-content: center;
+}
+.textAdmin{
+    font-family: var(--tipografia);
+    width: fit-content;
+    padding: 0 20px;
+    margin-top: 7px;
+    margin-right: 200px;
+    border-right: 2px solid var(--principalNaranja);
+}
+
+.seCerrarLetra{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: -40px; */
+}
+.cerrarLetra{
+    cursor: pointer;
+    padding-right: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: -28px;
+}
+
+.opciones{
+    margin-right: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    background-color: rgba(255, 255, 255, 0.904);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    bottom: 1px solid black;
+    /*box-shadow: ;*/
+    display: none;
+}
+.opciones li{
+    margin: 0 20px;
+    padding: 0px;
+    color: var(--principalGrisClaro);
+    width: fit-content;
+    font-weight: 500;
+}
+.menu .opciones a:hover{
+    background-color: white;
+    color: var(--principalNaranja);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.menu .opciones a i{
+    margin: 0;
+    padding: 0;
+    color: var(--principalGrisClaro);
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+
+
+.menu .opciones a:hover li{
+    background-color: white;
+    color: var(--principalNaranja);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.menu .opciones a:hover i{
+    color: var(--principalNaranja);
+}
+.despegable{
+    display: flex;
+}
+.header-responsive{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 18px;
+}
+.cajaGneralUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 20px;
+}
+.saludoUser{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--tipografia);
+}
+.saludoUser span{
+    font-family: var(--tipografia);
+    margin-top: -10px;
+    color: var(--principalNaranja);
+}
+.cajaGneralUsuario section span{
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.1em;
+    
+}
+.seccionInfoUsuario{
+    display: flex;
+    align-self: flex-start;
+    margin-top: -10px;
+}
+
+.iniciales{
+    background-color: var(--principalGrisClaro);
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    min-width:2vw ;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 100%;
+    margin-right: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.iniciales p{
+    font-size: 1em;
+}
+
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: var(--principalNaranja);
+    border-radius: 100%;
+    border-color: var(--principalGrisClaro);
+    color: #fff;
+}
+.daterangepicker .calendar-table td {
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.daterangepicker td.in-range {
+    background-color:#f56a44b9;
+    border-radius: 100%;
+    border-color: transparent;
+    color: white;
+}
+td.active:hover {
+    background-color: var(--principalNaranja);
+    
+    border-color: transparent;
+    color: #fff;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: var(--principalNaranja);
+    
+    border-color: transparent;
+    color: #fff;
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+    background-color:var(--principalNaranja) ;
+    border-radius: 100%;
+    color: white;
+    border-color: transparent;
+}
+.daterangepicker .drp-buttons .btn {
+    border-style: none;
+    color: var(--principalNaranja);
+    background-color: white;
+    border: solid 1px var(--principalNaranja);
+    border-radius: 10px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+.daterangepicker td.start-date.end-date {
+    border-radius: 50%;
+}
+.daterangepicker .drp-buttons .btn:hover {
+    border-style: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--principalNaranja);
+    border: solid 1px var(--principalNaranja);
+    border-radius: 10px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+footer {
+    overflow: hidden;
+    width: 100%;
+    background-color: #F0572D;
+    /* position: fixed; */
+    bottom: 0;
+    font-size: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+footer .pie-de-pagina{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    display:flex;
+    padding: 15px 39px 15px 68px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+footer .pie-de-pagina .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .pie-de-pagina .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    width: 40px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #F0572D;
+    text-align: center;
+}
+/* ============ ESTILOS SECCION BUSCADOR ===================== */
+.titulo {
+    margin: 10px;
+}
+section.seccionBuscador {
+    background-color: var(--principalGrisClaro);
+    color: white;
+    text-align: center;
+    align-content: center;
+    height: 20vh;
+    margin-top: 50px;
+}
+
+
+
+.botonBuscar {
+    background-color: #F0572D;
+    color: white;
+    font-size: 13px;
+    padding: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    border: none;
+    margin: 5px;
+    height: 30px;
+    width: 200px;
+}
+
+.select-ciudad {
+    font-family: 'Poppins', "Font Awesome 5 Pro";
+    font-weight: 550;
+    color: #757575;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.input-calendario {
+    font-weight : 550px;
+    color: #757575;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 28vw;
+    text-align: center;
+}
+
+.input-fecha {
+        font-weight : 550px;
+        color: #757575;
+        border: none;
+        border-radius: 5px;
+        margin: 5px;
+        height: 30px;
+        width: 28vw;
+        text-align: center;
+}
+
+.fa, .fas {
+        font-family: "Poppins", "Font Awesome 5 Pro";
+        font-weight: 550;
+    }
+
+
+/* ---------------------------------------- */
+
+.menu_bar {
+	display:none;
+} 
+
+#cerrar{
+    width: 40px;
+    display: none;
+    background: none;
+    color: var(--zochu);
+    border-style: none;
+    font-size: 40px;
+    margin-left:20px;
+} 
+
+.red-social-header{
+    display: none;
+}
+
+.spanCerrarSesion{ 
+     display: none;
+}
+.header-menu-responsive{
+   display: none;
+}
+
+
+/*============== ARRANCA MEDIA QUERI====================== */
+@media (min-width:300px) and (max-width:700px ) {
+
+    /*============== HEADER MOVIL====================== */
+    .textAdmin {
+         margin-right: 0px; 
+    }
+    #cerrar{
+        width: 20px;
+        display: block;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+	header nav {
+		width:60%;
+		height:100%;
+		right: -100%;
+		margin:0;
+		position: fixed;
+        background-color: white;
+	}
+    #menu{
+        align-self: start;
+        z-index: 1000;
+    }
+    #menu ul li {
+        float: none;
+       }
+    #menu ul ul{
+        
+        padding: 0;
+    }
+	header nav ul a li {
+        width: 100%;
+		display:block;
+		border-bottom:1px solid rgba(255,255,255, .3);
+        
+	}
+    nav ul li{
+        width: 100%;
+        justify-items: right;
+        border-bottom:1px solid rgba(255,255,255, .3);
+    }
+    
+	.menu_bar {
+		display:block;
+		width:100%;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:15px;
+		color: grey;
+		text-decoration:none;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+        float: right;
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+    .input-fecha {
+        width: 95%;
+}
+    .btn-header {
+        border: none;
+        color: #F0572D;
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        height: 40px;
+        width: 170px;
+        display: flex;
+
+    }
+
+    .menu a {
+        color: #F0572D;
+        display: flex;
+        padding: 10px 15px;
+        line-height: normal;
+        font-size: 14px;
+        text-decoration: none;
+        list-style:none;
+    }
+    .header-responsive {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 0px;
+    }
+    
+/*============== USUARIO MOVIL ====================== */
+
+.cajaGneralUsuario {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-end;
+    padding: 0px 20px;
+    margin-top: 60px;
+    color: black;
+}
+    
+.spanCerrarSesion{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cerrarLetra{
+    display: none;
+}
+.cajaGneralUsuario section .spanCerrarSesion{
+    font-size: 15px;
+    display: flex;
+}
+.iniciales {
+    background-color: var(--principalGrisClaro);
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    min-width: 2vw;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 100%;
+    margin-right: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-responsive .opciones{
+    margin: 0;
+    margin-top: 10px;
+    display: block;
+}
+
+.header-responsive .opciones li{
+    margin: 0;
+}
+
+.menu .cerrar{
+padding: 0 3px ;
+font-size: 12px;
+}
+.header-responsive{
+    background-color: var(--principalNaranja);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 30vh;
+    justify-content: space-between;
+}
+
+.header-menu-responsive{
+    display: flex;
+    align-self: flex-end;
+    margin-top: 14vh;
+    margin-right: 20px;
+}
+.header-responsive ul{
+    background-color: white;
+    margin-top: 50px;
+    margin-right: 3vw;
+}
+.cajaGneralUsuario section span{
+    font-size: 1em;
+    
+}
+
+
+
+/*============== BUSCADOR MOVIL====================== */
+section.seccionBuscador {
+    margin-top: 80px;
+    height: fit-content;
+}
+.formBuscar {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.select-ciudad {
+    font-weight : 550px;
+    color: #757575;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 0;
+}
+
+.input-calendario {
+    font-weight: 550;
+    color: #757575;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 95%;
+    text-align: center;
+}
+
+.botonBuscar {
+    border: none;
+    margin: 5px;
+    height: 35px;
+    width: 90vw;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+/*============== FOOTER MOVIL====================== */
+footer .pie-de-pagina .red-social a{
+    display: none;
+    text-decoration: none;
+    width: 40px;
+    height: 30px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #F0572D;
+    text-align: center;
+}
+
+
+.red-social-header{
+display: flex;
+margin-bottom: 30px;
+}
+.red-social-header a{
+font-size: 20px;
+}
+
+
+}
+
+
+
+
+
+
+
+@media (max-width:300px) {
+
+
+
+
+}
+/* ---------------------------------------- */
+
+/* 
+naranja #F0572D 
+gris oscuro #31363F
+negro #191B1D
+claro #F3F1ED
+*/ 

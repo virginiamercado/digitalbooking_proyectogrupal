@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/header-footer/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
+    <link rel="stylesheet" href="/Registro/Registro.css">
+    <link rel="shortcut icon" href="/img/logo 1.ico">
+    <title>Crear Cuenta</title>
+</head>
+<body>
+    <header class="header">
+
+    </header>
+    <main>
+        <div id="mensaje-error"></div>
+        <div class="ConteinerFrom">
+            <h2 class="tituloRegistro">Crear Cuenta</h2>
+            <form class="formRegistro" action="">
+                <section class="seccionInputs"> 
+                    <div class="cajaInput">
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Nombre"  id="nombre" onkeypress="return soloLetras(event)" onFocusout="validarNombre()">
+                        <span></span>
+                    </div>
+                    <div class="cajaInputDerecha">
+                        <label for="">Apellido</label>
+                        <input type="text" placeholder="Apellido" id="apellido" onkeypress="return soloLetras(event)" onFocusout="validarApellido()">
+                        <span></span>
+                    </div>
+                </section>
+                <section class="seccionInputs"> 
+                    <div class="cajaInput">
+                        <label for="">Fecha de Nacimiento</label>
+                        <input type="text" name="birthday" class="inputFecha" id="fecha" onchange="calcularEdad()" value="01/01/2000" />
+                        <span></span>
+                    </div>
+                    <div class="cajaInputDerecha">
+                        <label for="">Pais de Nacimiento</label>
+                        <select name="paises" id="paises" onFocusout="validarPais()">
+                            <option value="1">Selecciona Tu Pais De Nacimiento</option>
+                        </select>
+                        <span></span>
+                    </div>
+                </section>
+                <div id="email">
+                    <label for="">Correo electronico</label>
+                    <input type="email" placeholder="example@examlpe.com" id="correo" onFocusout="validarCorreo()">
+                    <span></span>
+                </div>
+
+                <section class="seccionPass">
+                    <label for="">Contraseña</label>
+                    <div class="divInputPass">
+                        <input type="password" class="inputPass" placeholder="••••••••••" id="password"  onFocusout="validatePassword()">
+                        <i class="fas fa-eye" id="ojoPass"></i>
+                    </div>
+                    <span> </span>
+                </section>
+                <div>
+                    <label for="">Confirmar contraseña</label>
+                    <input type="password" placeholder="••••••••••" id="passwordRep" onFocusout="confirmarPassword()">
+                    <span> </span>
+                </div>
+            
+
+                <button class="botonCrearCuenta">Crear Cuenta</button>
+            </form>
+            <span class="spanInicioSesion">¿Ya Tienes Cuenta? <a href="/LogIn/LogIn.html">Iniciar Sesion</a></span>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+
+    </footer>
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="/header-footer/header-footer.js" type="module"></script> 
+    <script src="/Registro/Registro.js" ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
